@@ -29,6 +29,7 @@ body {
 }
 .calc-container h1 {
     color: navajowhite;
+    font-family: 'Courier New', Courier, monospace;
 }
 .output {
     height: 48px;
