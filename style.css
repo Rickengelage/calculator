@@ -17,10 +17,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 12px;
     flex-wrap: wrap;
     width: 500px;
-    height: 700px;
+    height: 600px;
     background-color: #02101f;
     border: #02101f 1px solid;
+    border-radius: 25px;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 5px solid white;
+    justify-content: center;
+    align-self: center;
+    width: 400px;
+}
+.buttons button {
+    padding: 36px;
     border-radius: 25px;
 }
