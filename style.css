@@ -45,10 +45,10 @@ body {
     gap: 10px;
     justify-content: center;
     align-self: center;
-    width: 400px;
-}
+    width: 400px;}
 .buttons button {
-    padding: 36px;
+    width: 76px;
+    height: 76px;
     border-radius: 25px;
 }
 .buttons button:hover {
@@ -58,4 +58,7 @@ body {
 }
 #resultIs, #add, #substract, #multiply, #divide {
     background-color: rgb(252, 84, 22);
+}
+.buttons button h1 {
+ color: #000000;
 }
