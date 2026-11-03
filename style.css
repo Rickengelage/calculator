@@ -25,6 +25,7 @@ body {
     background-color: #02101f;
     border: #02101f 1px solid;
     border-radius: 25px;
+    box-shadow: 5px 5px 11px 0px #000000;
 }
 .calc-container h1 {
     color: navajowhite;
