@@ -15,17 +15,22 @@ const clearAll = document.querySelector(".clearall")
 
 
 
-
-
-
+let buttonpressed = 0
 
 
 const seven = document.getElementById("seven")
 seven.addEventListener("click", () => {
-    let newValue = numSeven.innerHTML
+if(buttonpressed == 0){
+let newValue = numSeven.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numSeven.innerHTML
+updateAdd(newValue)
+}
 }
 )
+
 const eight = document.getElementById("eight")
 eight.addEventListener("click", () => {
     let newValue = numEight.innerHTML
@@ -82,12 +87,16 @@ update(newValue)
 )
 const clear = document.getElementById("clear")
 clear.addEventListener("click", () => {
-    let newValue = output.innerHTML = "";
-update(newValue)
+output.value = 0;
+buttonpressed = 0
 }
 )
 function update(num){
+output.value = num
 
+
+}
+function updateAdd(num){
 output.value += num
 
 
