@@ -30,59 +30,112 @@ updateAdd(newValue)
 }
 }
 )
-
 const eight = document.getElementById("eight")
 eight.addEventListener("click", () => {
-    let newValue = numEight.innerHTML
+if(buttonpressed == 0){
+let newValue = numEight.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numEight.innerHTML
+updateAdd(newValue)
+}
 }
 )
 const nine = document.getElementById("nine")
 nine.addEventListener("click", () => {
-    let newValue = numNine.innerHTML
+if(buttonpressed == 0){
+let newValue = numNine.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numNine.innerHTML
+updateAdd(newValue)
+}
 }
 )
 const four = document.getElementById("four")
 four.addEventListener("click", () => {
-    let newValue = numFour.innerHTML
+if(buttonpressed == 0){
+let newValue = numFour.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numFour.innerHTML
+updateAdd(newValue)
+}
 }
 )
 const five = document.getElementById("five")
 five.addEventListener("click", () => {
-    let newValue = numFive.innerHTML
+if(buttonpressed == 0){
+let newValue = numFive.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numFive.innerHTML
+updateAdd(newValue)
+}
 }
 )
 const six = document.getElementById("six")
 six.addEventListener("click", () => {
-    let newValue = numSix.innerHTML
+if(buttonpressed == 0){
+let newValue = numSix.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numSix.innerHTML
+updateAdd(newValue)
+}
 }
 )
 const one = document.getElementById("one")
 one.addEventListener("click", () => {
-    let newValue = numOne.innerHTML
+if(buttonpressed == 0){
+let newValue = numOne.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numOne.innerHTML
+updateAdd(newValue)
+}
 }
 )
 const two = document.getElementById("two")
 two.addEventListener("click", () => {
-    let newValue = numTwo.innerHTML
+if(buttonpressed == 0){
+let newValue = numTwo.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numTwo.innerHTML
+updateAdd(newValue)
+}
 }
 )
 const three = document.getElementById("three")
 three.addEventListener("click", () => {
-    let newValue = numThree.innerHTML
+if(buttonpressed == 0){
+let newValue = numThree.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numThree.innerHTML
+updateAdd(newValue)
+}
 }
 )
 const zero = document.getElementById("zero")
 zero.addEventListener("click", () => {
-    let newValue = numZero.innerHTML
+if(buttonpressed == 0){
+let newValue = numZero.innerHTML
 update(newValue)
+    buttonpressed = 1
+}else if(buttonpressed == 1){
+    let newValue = numZero.innerHTML
+updateAdd(newValue)
+}
 }
 )
 const clear = document.getElementById("clear")
