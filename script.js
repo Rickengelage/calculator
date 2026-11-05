@@ -10,12 +10,15 @@ const numTwo = document.querySelector(".numbertwo")
 const numThree = document.querySelector(".numberthree")
 const numZero = document.querySelector(".numberzero")
 const clearAll = document.querySelector(".clearall")
-
+const multi = document.querySelector(".multi")
 
 
 
 
 let buttonpressed = 0
+let operatorPressed = 0
+let firstNum = [];
+let finalFirstnum = ""
 
 
 const seven = document.getElementById("seven")
@@ -24,9 +27,13 @@ if(buttonpressed == 0){
 let newValue = numSeven.innerHTML
 update(newValue)
     buttonpressed = 1
+    firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numSeven.innerHTML
 updateAdd(newValue)
+firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -36,9 +43,13 @@ if(buttonpressed == 0){
 let newValue = numEight.innerHTML
 update(newValue)
     buttonpressed = 1
+     firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numEight.innerHTML
 updateAdd(newValue)
+ firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -48,9 +59,13 @@ if(buttonpressed == 0){
 let newValue = numNine.innerHTML
 update(newValue)
     buttonpressed = 1
+     firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numNine.innerHTML
 updateAdd(newValue)
+ firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -60,9 +75,13 @@ if(buttonpressed == 0){
 let newValue = numFour.innerHTML
 update(newValue)
     buttonpressed = 1
+     firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numFour.innerHTML
 updateAdd(newValue)
+ firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -72,9 +91,13 @@ if(buttonpressed == 0){
 let newValue = numFive.innerHTML
 update(newValue)
     buttonpressed = 1
+     firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numFive.innerHTML
 updateAdd(newValue)
+ firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -84,9 +107,13 @@ if(buttonpressed == 0){
 let newValue = numSix.innerHTML
 update(newValue)
     buttonpressed = 1
+     firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numSix.innerHTML
 updateAdd(newValue)
+ firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -96,9 +123,13 @@ if(buttonpressed == 0){
 let newValue = numOne.innerHTML
 update(newValue)
     buttonpressed = 1
+     firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numOne.innerHTML
 updateAdd(newValue)
+ firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -108,9 +139,13 @@ if(buttonpressed == 0){
 let newValue = numTwo.innerHTML
 update(newValue)
     buttonpressed = 1
+     firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numTwo.innerHTML
 updateAdd(newValue)
+ firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -120,9 +155,13 @@ if(buttonpressed == 0){
 let newValue = numThree.innerHTML
 update(newValue)
     buttonpressed = 1
+     firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numThree.innerHTML
 updateAdd(newValue)
+ firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -132,9 +171,13 @@ if(buttonpressed == 0){
 let newValue = numZero.innerHTML
 update(newValue)
     buttonpressed = 1
+     firstNum.push(newValue)
+    console.log(firstNum)
 }else if(buttonpressed == 1){
     let newValue = numZero.innerHTML
 updateAdd(newValue)
+ firstNum.push(newValue)
+    console.log(firstNum)
 }
 }
 )
@@ -142,6 +185,9 @@ const clear = document.getElementById("clear")
 clear.addEventListener("click", () => {
 output.value = 0;
 buttonpressed = 0
+operatorPressed = 0
+firstNum.length = 0;
+console.log(firstNum)
 }
 )
 function update(num){
@@ -154,3 +200,18 @@ output.value += num
 
 
 }
+const multiply = document.getElementById("multiply")
+multiply.addEventListener("click", () => {
+if(operatorPressed == 0){
+let newValue = multi.innerHTML
+updateAdd(newValue)
+finalFirstnum = firstNum.join("")
+console.log(finalFirstnum)
+    operatorPressed = 1
+}else if(operatorPressed == 1){
+    console.log("nothing")
+    
+}
+
+
+})
