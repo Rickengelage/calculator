@@ -48,148 +48,193 @@ secondNum.push(newValue)
 )
 const eight = document.getElementById("eight")
 eight.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numEight.innerHTML
 update(newValue)
     buttonpressed = 1
-     firstNum.push(newValue)
+    firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numEight.innerHTML
 updateAdd(newValue)
- firstNum.push(newValue)
+firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numEight.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
 }
+
 }
 )
 const nine = document.getElementById("nine")
 nine.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numNine.innerHTML
 update(newValue)
     buttonpressed = 1
-     firstNum.push(newValue)
+    firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numNine.innerHTML
 updateAdd(newValue)
- firstNum.push(newValue)
+firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numNine.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
 }
+
 }
 )
 const four = document.getElementById("four")
 four.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numFour.innerHTML
 update(newValue)
     buttonpressed = 1
-     firstNum.push(newValue)
+    firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numFour.innerHTML
 updateAdd(newValue)
- firstNum.push(newValue)
+firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numFour.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
 }
+
 }
 )
 const five = document.getElementById("five")
 five.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numFive.innerHTML
 update(newValue)
     buttonpressed = 1
-     firstNum.push(newValue)
+    firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numFive.innerHTML
 updateAdd(newValue)
- firstNum.push(newValue)
+firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numFive.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
 }
+
 }
 )
 const six = document.getElementById("six")
 six.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numSix.innerHTML
 update(newValue)
     buttonpressed = 1
-     firstNum.push(newValue)
+    firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numSix.innerHTML
 updateAdd(newValue)
- firstNum.push(newValue)
+firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numSix.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
 }
 }
 )
 const one = document.getElementById("one")
 one.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numOne.innerHTML
 update(newValue)
     buttonpressed = 1
-     firstNum.push(newValue)
+    firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numOne.innerHTML
 updateAdd(newValue)
- firstNum.push(newValue)
+firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numOne.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
 }
+
 }
 )
 const two = document.getElementById("two")
 two.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numTwo.innerHTML
 update(newValue)
     buttonpressed = 1
-     firstNum.push(newValue)
+    firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numTwo.innerHTML
 updateAdd(newValue)
- firstNum.push(newValue)
+firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numTwo.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
 }
+
 }
 )
 const three = document.getElementById("three")
 three.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numThree.innerHTML
 update(newValue)
     buttonpressed = 1
-     firstNum.push(newValue)
+    firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numThree.innerHTML
 updateAdd(newValue)
- firstNum.push(newValue)
+firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numThree.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
 }
+
 }
 )
 const zero = document.getElementById("zero")
 zero.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numZero.innerHTML
 update(newValue)
     buttonpressed = 1
-     firstNum.push(newValue)
+    firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numZero.innerHTML
 updateAdd(newValue)
- firstNum.push(newValue)
+firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numZero.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
 }
+
 }
 )
+
 const clear = document.getElementById("clear")
 clear.addEventListener("click", () => {
 output.value = 0;
