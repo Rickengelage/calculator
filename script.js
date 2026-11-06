@@ -19,8 +19,10 @@ let buttonpressed = 0
 let operatorPressed = 0
 let firstNum = [];
 let secondNum = [];
-
-let finalFirstnum = ""
+let operation = "";
+let finalFirstnum = 0
+let finalSecondnum = 0
+let calculatedNum = 0;
 
 
 const seven = document.getElementById("seven")
@@ -40,8 +42,6 @@ firstNum.push(newValue)
     let newValue = numSeven.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
-console.log(secondNum)
-
 }
 
 }
@@ -196,7 +196,10 @@ output.value = 0;
 buttonpressed = 0
 operatorPressed = 0
 firstNum.length = 0;
-console.log(firstNum)
+secondNum.length = 0;
+calculatedNum = 0;
+finalFirstnum = 0
+finalSecondnum = 0
 }
 )
 function update(num){
@@ -213,14 +216,47 @@ const multiply = document.getElementById("multiply")
 multiply.addEventListener("click", () => {
 if(operatorPressed == 0){
 let newValue = " " + multi.innerHTML + " ";
+ operation = "x"
 updateAdd(newValue)
 finalFirstnum = firstNum.join("")
-console.log(finalFirstnum)
     operatorPressed = 1
+//this makes sure only one operator can be chosen at a time
 }else if(operatorPressed == 1){
-    console.log("nothing")
-    
+ consle.log(nothing)    
+ //this makes sure the fist calculation can be calculated again
+}else if (operatorPressed == 2){
+ finalFirstnum = calculatedNum;
+ finalSecondnum = 0;
+secondNum = [];
+ let newValue = " " + multi.innerHTML + " ";
+ operation = "x"
+updateAdd(newValue)
+operatorPressed = 1;
+
 }
 
 
 })
+const resultBtn = document.getElementById("resultIs")
+resultBtn.addEventListener("click", () => {
+//gets the final number after the operator
+finalSecondnum = secondNum.join("")
+//calls the calculation function with the number of left side of operator and right side of operator
+operator(finalFirstnum, finalSecondnum, operation)
+console.log(output.innerHTML)
+// tracks the calculated number
+calculatedNum = output.innerHTML;
+//updates the amount of times the operator is pressed
+operatorPressed = 2;
+//resets the first num to 0
+finalFirstnum = 0;
+// clears the operator value
+ operation = ""
+})
+
+
+function operator(num1, num2, opp){
+    if(opp === "x"){
+       return output.innerHTML = num1 * num2;
+    }
+}
