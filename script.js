@@ -18,23 +18,32 @@ const multi = document.querySelector(".multi")
 let buttonpressed = 0
 let operatorPressed = 0
 let firstNum = [];
+let secondNum = [];
+
 let finalFirstnum = ""
 
 
 const seven = document.getElementById("seven")
 seven.addEventListener("click", () => {
-if(buttonpressed == 0){
+if(buttonpressed == 0 && operatorPressed == 0){
 let newValue = numSeven.innerHTML
 update(newValue)
     buttonpressed = 1
     firstNum.push(newValue)
     console.log(firstNum)
-}else if(buttonpressed == 1){
+}else if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numSeven.innerHTML
 updateAdd(newValue)
 firstNum.push(newValue)
     console.log(firstNum)
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let newValue = numSeven.innerHTML
+updateAdd(newValue)
+secondNum.push(newValue)
+console.log(secondNum)
+
 }
+
 }
 )
 const eight = document.getElementById("eight")
@@ -203,7 +212,7 @@ output.value += num
 const multiply = document.getElementById("multiply")
 multiply.addEventListener("click", () => {
 if(operatorPressed == 0){
-let newValue = multi.innerHTML
+let newValue = " " + multi.innerHTML + " ";
 updateAdd(newValue)
 finalFirstnum = firstNum.join("")
 console.log(finalFirstnum)
