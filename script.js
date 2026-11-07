@@ -402,6 +402,7 @@ secondNum = [];
  operation = "x"
 updateAdd(newValue)
 operatorPressed = 1;
+buttonpressed = 1;
 
 }
 
@@ -410,7 +411,7 @@ operatorPressed = 1;
 
 const add = document.getElementById("add")
 add.addEventListener("click", () => {
-if(operatorPressed == 0){
+if(operatorPressed == 0 && buttonpressed == 1){
 let newValue = " " + sum.innerHTML + " ";
  operation = "+"
 updateAdd(newValue)
@@ -428,12 +429,13 @@ secondNum = [];
  operation = "+"
 updateAdd(newValue)
 operatorPressed = 1;
+buttonpressed = 1;
 
 }
 })
 const substract = document.getElementById("substract")
 substract.addEventListener("click", () => {
-if(operatorPressed == 0){
+if(operatorPressed == 0 && buttonpressed == 1){
 let newValue = " " + minus.innerHTML + " ";
  operation = "-"
 updateAdd(newValue)
@@ -451,12 +453,13 @@ secondNum = [];
  operation = "-"
 updateAdd(newValue)
 operatorPressed = 1;
+buttonpressed = 1;
 
 }
 })
 const divide = document.getElementById("divide")
 divide.addEventListener("click", () => {
-if(operatorPressed == 0){
+if(operatorPressed == 0 && buttonpressed == 1){
 let newValue = " " + split.innerHTML + " ";
  operation = "/"
 updateAdd(newValue)
@@ -474,6 +477,7 @@ secondNum = [];
  operation = "/"
 updateAdd(newValue)
 operatorPressed = 1;
+buttonpressed = 1;
 
 }
 })
@@ -497,6 +501,7 @@ if(buttonpressed == 1 && operatorPressed == 0){
 
 const resultBtn = document.getElementById("resultIs")
 resultBtn.addEventListener("click", () => {
+ 
 //gets the final number after the operator
 finalSecondnum = secondNum.join("")
 //calls the calculation function with the number of left side of operator and right side of operator
@@ -510,7 +515,8 @@ operatorPressed = 2;
 finalFirstnum = 0;
 // clears the operator value
  operation = ""
- buttonpressed = 1;
+ buttonpressed = 2;
+    
 })
 
 
