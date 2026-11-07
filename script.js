@@ -339,13 +339,14 @@ buttonpressed = 1;
 )
 const zero = document.getElementById("zero")
 zero.addEventListener("click", () => {
-if(buttonpressed == 0 && operatorPressed == 0){
-let newValue = numZero.innerHTML
-update(newValue)
-    buttonpressed = 1
-    firstNum.push(newValue)
-    console.log(firstNum)
-}else if(buttonpressed == 1 && operatorPressed == 0 ){
+// if(buttonpressed == 0 && operatorPressed == 0){
+// let newValue = numZero.innerHTML
+// update(newValue)
+//     buttonpressed = 1
+//     firstNum.push(newValue)
+//     console.log(firstNum)
+//}
+if(buttonpressed == 1 && operatorPressed == 0 ){
     let newValue = numZero.innerHTML
 updateAdd(newValue)
 firstNum.push(newValue)
