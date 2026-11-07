@@ -11,8 +11,9 @@ const numThree = document.querySelector(".numberthree")
 const numZero = document.querySelector(".numberzero")
 const clearAll = document.querySelector(".clearall")
 const multi = document.querySelector(".multi")
-
-
+const sum = document.querySelector(".sum")
+const minus = document.querySelector(".minus")
+const split = document.querySelector(".split")
 
 
 let buttonpressed = 0
@@ -282,6 +283,105 @@ operatorPressed = 1;
 
 
 })
+
+const add = document.getElementById("add")
+add.addEventListener("click", () => {
+if(operatorPressed == 0){
+let newValue = " " + sum.innerHTML + " ";
+ operation = "+"
+updateAdd(newValue)
+finalFirstnum = firstNum.join("")
+    operatorPressed = 1
+//this makes sure only one operator can be chosen at a time
+}else if(operatorPressed == 1){
+ consle.log(nothing)    
+ //this makes sure the fist calculation can be calculated again
+}else if (operatorPressed == 2){
+ finalFirstnum = calculatedNum;
+ finalSecondnum = 0;
+secondNum = [];
+ let newValue = " " + sum.innerHTML + " ";
+ operation = "+"
+updateAdd(newValue)
+operatorPressed = 1;
+
+}
+})
+const substract = document.getElementById("substract")
+substract.addEventListener("click", () => {
+if(operatorPressed == 0){
+let newValue = " " + minus.innerHTML + " ";
+ operation = "-"
+updateAdd(newValue)
+finalFirstnum = firstNum.join("")
+    operatorPressed = 1
+//this makes sure only one operator can be chosen at a time
+}else if(operatorPressed == 1){
+ consle.log(nothing)    
+ //this makes sure the fist calculation can be calculated again
+}else if (operatorPressed == 2){
+ finalFirstnum = calculatedNum;
+ finalSecondnum = 0;
+secondNum = [];
+ let newValue = " " + minus.innerHTML + " ";
+ operation = "+"
+updateAdd(newValue)
+operatorPressed = 1;
+
+}
+})
+const divide = document.getElementById("divide")
+divide.addEventListener("click", () => {
+if(operatorPressed == 0){
+let newValue = " " + split.innerHTML + " ";
+ operation = "/"
+updateAdd(newValue)
+finalFirstnum = firstNum.join("")
+    operatorPressed = 1
+//this makes sure only one operator can be chosen at a time
+}else if(operatorPressed == 1){
+ consle.log(nothing)    
+ //this makes sure the fist calculation can be calculated again
+}else if (operatorPressed == 2){
+ finalFirstnum = calculatedNum;
+ finalSecondnum = 0;
+secondNum = [];
+ let newValue = " " + split.innerHTML + " ";
+ operation = "/"
+updateAdd(newValue)
+operatorPressed = 1;
+
+}
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const resultBtn = document.getElementById("resultIs")
 resultBtn.addEventListener("click", () => {
 //gets the final number after the operator
@@ -302,6 +402,12 @@ finalFirstnum = 0;
 
 function operator(num1, num2, opp){
     if(opp === "x"){
-       return output.innerHTML = num1 * num2;
-    }
+       return output.innerHTML = parseInt(num1) * parseInt(num2);
+    }else if (opp == "+") {
+    return  output.innerHTML = parseInt(num1) + parseInt(num2);
+    }else if(opp == "-"){
+    return  output.innerHTML = parseInt(num1) - parseInt(num2);
+    }else if (opp == "/")
+    return  output.innerHTML = parseInt(num1) / parseInt(num2);
+
 }
