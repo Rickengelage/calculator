@@ -45,9 +45,9 @@ updateAdd(newValue)
 secondNum.push(newValue)
 }else if(buttonpressed == 2 && operatorPressed == 2){
 buttonpressed = 1;
-    operatorPressed = 0;
     calculatedNum = 0;
-    operatorPressed = 0
+
+operatorPressed = 0
 firstNum.length = 0;
 secondNum.length = 0;
 finalFirstnum = 0
@@ -384,7 +384,7 @@ output.value += num
 }
 const multiply = document.getElementById("multiply")
 multiply.addEventListener("click", () => {
-if(operatorPressed == 0){
+if(operatorPressed == 0 && buttonpressed == 1){
 let newValue = " " + multi.innerHTML + " ";
  operation = "x"
 updateAdd(newValue)
@@ -510,7 +510,7 @@ operatorPressed = 2;
 finalFirstnum = 0;
 // clears the operator value
  operation = ""
- buttonpressed = 2;
+ buttonpressed = 1;
 })
 
 
