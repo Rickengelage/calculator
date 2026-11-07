@@ -324,7 +324,7 @@ finalFirstnum = firstNum.join("")
  finalSecondnum = 0;
 secondNum = [];
  let newValue = " " + minus.innerHTML + " ";
- operation = "+"
+ operation = "-"
 updateAdd(newValue)
 operatorPressed = 1;
 
@@ -353,31 +353,20 @@ operatorPressed = 1;
 
 }
 })
+const backspace = document.getElementById("backspace")
+backspace.addEventListener("click", () => {
+if(buttonpressed == 1 && operatorPressed == 0){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    let popped = firstNum.pop();
+    console.log(popped)
+    output.innerHTML = firstNum.join("")
+}else if(buttonpressed == 1 && operatorPressed == 1){
+    let secondPop = secondNum.pop();
+    console.log(secondPop)
+    output.innerHTML = firstNum.join("") + " " + operation + " " + secondNum.join("")
+    
+}
+})
 
 
 
