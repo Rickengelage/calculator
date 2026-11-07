@@ -43,10 +43,23 @@ firstNum.push(newValue)
     let newValue = numSeven.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
-}
+}else if(buttonpressed == 2 && operatorPressed == 2){
+buttonpressed = 1;
+    operatorPressed = 0;
+    calculatedNum = 0;
+    operatorPressed = 0
+firstNum.length = 0;
+secondNum.length = 0;
+finalFirstnum = 0
+finalSecondnum = 0
+    let newValue = numSeven.innerHTML
+update(newValue)
+    
+    firstNum.push(newValue)
+    console.log(firstNum)
 
 }
-)
+})
 const eight = document.getElementById("eight")
 eight.addEventListener("click", () => {
 if(buttonpressed == 0 && operatorPressed == 0){
@@ -64,10 +77,22 @@ firstNum.push(newValue)
     let newValue = numEight.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
-}
+}else if(buttonpressed == 2 && operatorPressed == 2){
+buttonpressed = 1;
+    operatorPressed = 0;
+    calculatedNum = 0;
+    operatorPressed = 0
+    firstNum.length = 0;
+    secondNum.length = 0;
+    finalFirstnum = 0
+    finalSecondnum = 0
+    let newValue = numEight.innerHTML
+    update(newValue)
+    firstNum.push(newValue)
+    console.log(firstNum)
 
 }
-)
+})
 const nine = document.getElementById("nine")
 nine.addEventListener("click", () => {
 if(buttonpressed == 0 && operatorPressed == 0){
@@ -85,6 +110,20 @@ firstNum.push(newValue)
     let newValue = numNine.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
+}else if(buttonpressed == 2 && operatorPressed == 2){
+buttonpressed = 1;
+    operatorPressed = 0;
+    calculatedNum = 0;
+    operatorPressed = 0
+    firstNum.length = 0;
+    secondNum.length = 0;
+    finalFirstnum = 0
+    finalSecondnum = 0
+    let newValue = numNine.innerHTML
+    update(newValue)
+    firstNum.push(newValue)
+    console.log(firstNum)
+
 }
 
 }
@@ -106,6 +145,20 @@ firstNum.push(newValue)
     let newValue = numFour.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
+}else if(buttonpressed == 2 && operatorPressed == 2){
+buttonpressed = 1;
+    operatorPressed = 0;
+    calculatedNum = 0;
+    operatorPressed = 0
+    firstNum.length = 0;
+    secondNum.length = 0;
+    finalFirstnum = 0
+    finalSecondnum = 0
+    let newValue = numFour.innerHTML
+    update(newValue)
+    firstNum.push(newValue)
+    console.log(firstNum)
+
 }
 
 }
@@ -127,6 +180,20 @@ firstNum.push(newValue)
     let newValue = numFive.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
+}else if(buttonpressed == 2 && operatorPressed == 2){
+buttonpressed = 1;
+    operatorPressed = 0;
+    calculatedNum = 0;
+    operatorPressed = 0
+    firstNum.length = 0;
+    secondNum.length = 0;
+    finalFirstnum = 0
+    finalSecondnum = 0
+    let newValue = numFive.innerHTML
+    update(newValue)
+    firstNum.push(newValue)
+    console.log(firstNum)
+
 }
 
 }
@@ -148,6 +215,20 @@ firstNum.push(newValue)
     let newValue = numSix.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
+}else if(buttonpressed == 2 && operatorPressed == 2){
+buttonpressed = 1;
+    operatorPressed = 0;
+    calculatedNum = 0;
+    operatorPressed = 0
+    firstNum.length = 0;
+    secondNum.length = 0;
+    finalFirstnum = 0
+    finalSecondnum = 0
+    let newValue = numSix.innerHTML
+    update(newValue)
+    firstNum.push(newValue)
+    console.log(firstNum)
+
 }
 }
 )
@@ -168,6 +249,20 @@ firstNum.push(newValue)
     let newValue = numOne.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
+}else if(buttonpressed == 2 && operatorPressed == 2){
+buttonpressed = 1;
+    operatorPressed = 0;
+    calculatedNum = 0;
+    operatorPressed = 0
+    firstNum.length = 0;
+    secondNum.length = 0;
+    finalFirstnum = 0
+    finalSecondnum = 0
+    let newValue = numOne.innerHTML
+    update(newValue)
+    firstNum.push(newValue)
+    console.log(firstNum)
+
 }
 
 }
@@ -189,6 +284,20 @@ firstNum.push(newValue)
     let newValue = numTwo.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
+}else if(buttonpressed == 2 && operatorPressed == 2){
+buttonpressed = 1;
+    operatorPressed = 0;
+    calculatedNum = 0;
+    operatorPressed = 0
+    firstNum.length = 0;
+    secondNum.length = 0;
+    finalFirstnum = 0
+    finalSecondnum = 0
+    let newValue = numTwo.innerHTML
+    update(newValue)
+    firstNum.push(newValue)
+    console.log(firstNum)
+
 }
 
 }
@@ -210,6 +319,20 @@ firstNum.push(newValue)
     let newValue = numThree.innerHTML
 updateAdd(newValue)
 secondNum.push(newValue)
+}else if(buttonpressed == 2 && operatorPressed == 2){
+buttonpressed = 1;
+    operatorPressed = 0;
+    calculatedNum = 0;
+    operatorPressed = 0
+    firstNum.length = 0;
+    secondNum.length = 0;
+    finalFirstnum = 0
+    finalSecondnum = 0
+    let newValue = numThree.innerHTML
+    update(newValue)
+    firstNum.push(newValue)
+    console.log(firstNum)
+
 }
 
 }
@@ -386,6 +509,7 @@ operatorPressed = 2;
 finalFirstnum = 0;
 // clears the operator value
  operation = ""
+ buttonpressed = 2;
 })
 
 
